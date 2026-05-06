@@ -1,0 +1,8 @@
+
+create db and tables
+psql "postgresql://craft_fusion_user:OPpBHoMHhh3CyH5XKZpfvYritrvws0rA@dpg-d7t7qjjeo5us73frkhpg-a.oregon-postgres.render.com/craft_fusion" -f backend/config/schema.sql
+
+seed 
+
+cd backend
+NODE_ENV=production DB_HOST=dpg-d7t7qjjeo5us73frkhpg-a.oregon-postgres.render.com DB_USER=craft_fusion_user DB_PASSWORD=OPpBHoMHhh3CyH5XKZpfvYritrvws0rA DB_NAME=craft_fusion DB_PORT=5432 node config/seed.js

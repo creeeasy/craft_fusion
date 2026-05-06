@@ -38,8 +38,8 @@ class AppColors {
 class AppStrings {
   static const appName = 'Craft Fusion';
   static const tagline = 'منصة الحرف المحلية';
-  static const baseUrl = 'http://192.168.1.102:3000/api'; // Android emulator
-  // For real device use your machine IP: 'http://192.168.x.x:3000/api'
+  static const baseUrl =
+      'https://craft-fusion.onrender.com/api'; // Android emulator
 }
 
 class AppRoutes {
